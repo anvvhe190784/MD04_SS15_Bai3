@@ -1,0 +1,5 @@
+rootProject.name = 'MD04_SS15'
+
+include 'identity-service'
+include 'gateway-service'
+include 'course-service'

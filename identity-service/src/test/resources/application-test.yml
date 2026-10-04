@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:identity_test_db;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+app:
+  jwt:
+    secret: 9a4f2c8d3b7a1e6f4c8d2e9a7b1c3f5d8a2e4c6b8a1d3f5e7c9b2a4d6f8e1a3c
+    access-token-expiration-ms: 900000
+    refresh-token-expiration-ms: 604800000
